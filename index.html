@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Design Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      background-color: #f4f7f4;
+      color: #2f3e2f;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 120px;
+      height: 100vh;
+      background-color: #2f5d50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    .sidebar h2 {
+      color: #d8e3d8;
+      margin-bottom: 40px;
+    }
+
+    .nav-links {
+      list-style: none;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+
+    .nav-links li {
+      margin: 20px 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #d8e3d8;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      color: #a8c3a1;
+    }
+
+    /* Main Content */
+    .content {
+      margin-left: 220px;
+      padding: 40px;
+      width: 100%;
+    }
+
+    section {
+      margin-bottom: 80px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #cfd8cf;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #2f5d50;
+      font-size: 300%;
+    }
+
+    p {
+      line-height: 1.6;
+      max-width: 700px;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background-color: #e3efe3;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+
+    .project-image {
+        margin: 5%;
+      width: 30%;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      font-size: xx-large;
+    }
+
+    /* Contact */
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .side_nav_img{
+    display: flex;
+    justify-self: center;
+    width: 25%;
+    margin-top: 15px;
+}
+  </style>
+</head>
+<body>
+
+  <nav class="sidebar">
+    <h2>Portfolio</h2>
+    <ul class="nav-links">
+      <li><a href="#about">About</a>
+        <div>
+            <a href="#sobre"><img src="PT_Flag.png" class="side_nav_img"></a>
+        </div></li>
+        <li><a href="#projects">Projects</a>
+            <a href="#sobre"><img src="AssemblyLogo.png" class="side_nav_img"></a>
+            <a href="#sobre"><img src="SlugIcon.png" class="side_nav_img"></a>
+            <a href="#sobre"><img src="HostileTakeover.png" class="side_nav_img"></a>
+        </li>
+        <li><a href="#contact">Contact</a>
+            <a href="#sobre"><img src="PhoneIcon.png" class="side_nav_img"></a>
+        </li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        My name is Bernardo Godinho. I am a 21 year old portuguese Video game and Multimedia application design undergraduate at ULP.</b>My work focuses on programming smaller indie projects with unique and polished mechanics.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Assembly Lines</h3>
+          <p>Assembly Lines is a puzzle game focused on combining different machines to create simple shapes.</p>
+          <a href="#sobre"><img src="AssemblyLogo.png" class="project-image"></a>
+        </div>
+        <div class="project-card">
+          <h3>Slugshot</h3>
+          <p>Slugshot is an roguelike action platformer where a slug must use the recoil from</p>
+          <a href="#sobre"><img src="SlugIcon.png" class="project-image"></a>
+        </div>
+        <div class="project-card">
+          <h3>Hostile Takeover</h3>
+          <p>This game is a short arcade experience where oyu must posses other enemies to stay alive
+          </p>
+          <a href="#sobre"><img src="HostileTakeover.png" class="project-image"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <div class="contact-info">
+        <p>Email: your@email.com</p>
+        <p>LinkedIn: yourprofile</p>
+        <p>Twitter: @yourhandle</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
